@@ -1,7 +1,8 @@
 import React from "react";
+import { IKeyProps } from "./Key.types";
 import "./styles.css";
 
-export const Key = (props) => {
+export const Key = (props: IKeyProps) => {
   const { midiNumber, onPlayNote } = props;
 
   const handleOnPlayNote = () => onPlayNote(midiNumber);

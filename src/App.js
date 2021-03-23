@@ -6,5 +6,5 @@ export default function App() {
     console.log(midiNote);
   };
 
-  return <KeyBoard onPlayNote={onPlayNote} first={0} last={15} />;
+  return <KeyBoard onPlayNote={onPlayNote} first={24} last={40} />;
 }
