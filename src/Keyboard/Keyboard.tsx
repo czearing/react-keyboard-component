@@ -18,7 +18,7 @@ export const KeyBoard = (props) => {
 
   return (
     <div className={props.className}>
-      <ul class="set">{keys}</ul>
+      <ul className="set">{keys}</ul>
     </div>
   );
 };
