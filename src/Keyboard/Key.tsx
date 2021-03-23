@@ -42,14 +42,6 @@ export const Key = (props) => {
     11: "g#"
   };
 
-  console.log(
-    keyColorMap[midiNumber % 12] +
-      " " +
-      noteMap[midiNumber % 12] +
-      " " +
-      Math.floor(midiNumber / 12)
-  );
-
   return (
     <li
       className={keyColorMap[midiNumber % 12] + " " + noteMap[midiNumber % 12]}
