@@ -16,7 +16,7 @@ export interface IKeyboardProps {
 
   /**
    * The last playable midi note value
-   * to be displayed on the piano.
+   * to be displayed on this piano.
    */
   last: number;
 
@@ -27,8 +27,13 @@ export interface IKeyboardProps {
   onPlayNote: (midiNote: number) => void;
 
   /**
-   * {@code false} if the keyboard should not handle keyboard events.
+   * {@code false} if the piano should not handle keyboard events.
    * {@default} true
    */
   handleKeyboardEvents: boolean;
+
+  /**
+   * The width of this piano.
+   */
+  width: number;
 }

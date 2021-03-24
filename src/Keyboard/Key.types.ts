@@ -4,6 +4,11 @@
  */
 export interface IKeyProps {
   /**
+   * CSS styling object for this key.
+   */
+  styles: any;
+
+  /**
    * The midi number value for this key.
    */
   midiNumber: number;

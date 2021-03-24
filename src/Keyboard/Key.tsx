@@ -3,7 +3,7 @@ import { IKeyProps } from "./Key.types";
 import "./styles.css";
 
 export const Key = (props: IKeyProps) => {
-  const { midiNumber, onPlayNote } = props;
+  const { midiNumber, onPlayNote, styles } = props;
 
   const handleOnPlayNote = () => onPlayNote(midiNumber);
 
@@ -47,6 +47,7 @@ export const Key = (props: IKeyProps) => {
     <li
       className={keyColorMap[midiNumber % 12] + " " + noteMap[midiNumber % 12]}
       onMouseDown={handleOnPlayNote}
+      style={styles}
     />
   );
 };

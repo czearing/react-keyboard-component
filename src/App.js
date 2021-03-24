@@ -6,5 +6,13 @@ export default function App() {
     console.log(midiNote);
   };
 
-  return <KeyBoard onPlayNote={onPlayNote} first={24} last={40} />;
+  return (
+    <KeyBoard
+      className="keyboard"
+      onPlayNote={onPlayNote}
+      first={15}
+      last={27}
+      width={75}
+    />
+  );
 }
